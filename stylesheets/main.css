@@ -17,6 +17,12 @@ body {
     outline: solid red 1px;
 }
 
+#full-nav {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+}
+
 /* TOP NAV */
 #top-nav {
     display: flex;
@@ -85,6 +91,27 @@ body {
     justify-content: center;
     align-items: flex-end;
     width: 25%;
+}
+
+.store-and-search .search * {
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    border: none;
+}
+
+.store-and-search .search input {
+    transition: all ease .3s;
+    border: none;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.store-and-search .search input:focus {
+    font-size: 16px;
+    box-shadow: 0 2px 5px gray;
+    transition: all ease .5s;
+    outline: none;
 }
 
 
