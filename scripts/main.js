@@ -1,6 +1,6 @@
-const $vehicleSelect = $('[data-nav-vehicle-select]');
-const $vehicleMenuDropdown = $('[data-nav-vehicle-menu]');
+const $navSelect = $('[data-nav-select]');
+const $menuDropdown = $('[data-nav-menu]');
 
-$vehicleSelect.on('click', () => {
-    $vehicleMenuDropdown.toggleClass('dropdown-translation')
-})
+$navSelect.on('click', (event) => {
+    $(event.target).children().toggleClass('hidden dropdown-animation');
+});
