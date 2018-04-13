@@ -13,31 +13,42 @@
 <body>
     <div id="full-nav">
 
-        <div id="top-nav">
-            <div class="store-and-search">
-                    <img src="assets/logo.png" alt="Roger Jobs Volkswagon">
-                <div class="store-info">
-                    <div class="store-info-text">
-                        <p><strong>Roger Jobs Volkswagen</strong></p>
-                        <div class="specifics">
-                            <div><p><i class="icon fas fa-map-marker"></i><a target="blank" href="https://maps.google.com/maps/dir/?api=1&destination=2200+Iowa+Street%2C+Bellingham+WA%2C+98226"> 2200 Iowa Street, Bellingham, WA 98226</a></p></div>
-                            <div><p><i class="icon fas fa-phone"></i> <a href="tel:+3607345230"> (360) 734-5230</a></p></div>
-                            <div><p><i class="icon far fa-envelope"></i> <a href="mailto:kjames@rogerjobs.com"> kjames@rogerjobs.com</a></p></div>
+        <div style="position: relative;">
+            <div id="top-nav">
+                <div class="store-and-search">
+                        <img src="assets/logo.png" alt="Roger Jobs Volkswagon">
+                    <div class="store-info">
+                        <div class="store-info-text">
+                            <p><strong>Roger Jobs Volkswagen</strong></p>
+                            <div class="specifics">
+                                <div><p><i class="icon fas fa-map-marker"></i><a target="blank" href="https://maps.google.com/maps/dir/?api=1&destination=2200+Iowa+Street%2C+Bellingham+WA%2C+98226"> 2200 Iowa Street, Bellingham, WA 98226</a></p></div>
+                                <div><p><i class="icon fas fa-phone"></i> <a href="tel:+3607345230"> (360) 734-5230</a></p></div>
+                                <div><p><i class="icon far fa-envelope"></i> <a href="mailto:kjames@rogerjobs.com"> kjames@rogerjobs.com</a></p></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="search">
-                    <form action="">
-                        <input type="text" placeholder="Search" data-search-input>
-                    </form>
+                    <div class="search">
+                        <form action="">
+                            <input type="text" placeholder="Search" data-search-input>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="nav">
-            <div class="nav-items">
-                <div>
-                    SELECT VEHICLE
+            <div id="nav">
+                <div class="nav-items">
+                    <ul>
+                        <li class="nav-dropdown-menu" data-nav-vehicle-select>
+                            SELECT VEHICLE <i class="fas fa-caret-down"></i>
+                            <ul data-nav-vehicle-menu>
+                                <li>Hey</li>
+                            </ul>
+                        </li>
+                        <li>PARTS <i class="fas fa-caret-down"></i></li>
+                        <li>ACCESSORIES</li>
+                        <li>VW DRIVEGEAR</li>
+                        <li>DEALER LOGIN</li>
+                    </ul>
                 </div>
             </div>
         </div>
