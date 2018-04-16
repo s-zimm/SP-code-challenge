@@ -9,7 +9,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: rgb(237, 240, 245);
 }
 
@@ -189,7 +189,7 @@ body {
 }
 
 .dropdown-animation {
-    animation: dropdown .7s alternate;
+    animation: dropdown .4s alternate;
     transition: all ease;
 }
 
@@ -302,6 +302,7 @@ body {
     margin-top: 15px;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 #tiles .all-tiles-container {
@@ -312,30 +313,33 @@ body {
 }
 
 #tiles .all-tiles-container .tile-container {
+    cursor: pointer;
     position: relative;
     width: 310px;
     height: 240px;
     display: flex;
     justify-content: flex-end;
     background-color: white;
-    transition: all ease .2s;
+    transition: all ease .1s;
     outline: solid .5px rgb(233, 233, 233);
 }
 
 #tiles .all-tiles-container .long-tile-container {
+    cursor: pointer;
     position: relative;
     width: 620px;
     height: 240px;
     display: flex;
     justify-content: flex-end;
     background-color: white;
-    transition: all ease .2s;
+    transition: all ease .1s;
     outline: solid .5px rgb(233, 233, 233);
 }
 
 #tiles .all-tiles-container .tile-container:hover, .long-tile-container:hover {
     box-shadow: 0 2px 10px #d5d5d5;
-    transition: all ease .2s;
+    transition: all ease .1s;
+    z-index: 1;
 }
 
 #tiles .all-tiles-container .tile-container img, .long-tile-container img {
@@ -362,11 +366,45 @@ body {
 }
 
 #tiles .tile-container a, .long-tile-container a {
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 23px;
     position: absolute;
     top: 16px;
     left: 10px;
     color: #949494;
+    font-weight: bold;
+}
+
+.naked {
+    text-decoration: none;
+}
+
+/* FOOTER */
+#footer {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 180px;
+    background-color: rgb(51, 51, 51);
+}
+
+#footer .text-column {
+    display: flex;
+    width: 78%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#footer .text-column-row {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#footer .text-column-row * {
+    font-size: 10px;
+    color: white;
+    margin: 5px 10px;
     font-weight: bold;
 }
