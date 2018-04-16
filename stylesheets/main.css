@@ -235,11 +235,11 @@ body {
 }
 
 .crumb-list {
-    width: 60%
+    width: 90%
 }
 
 .crumb-list ul {
-    width: 55%;
+    width: 100%;
     display: flex;
 }
 
@@ -315,7 +315,7 @@ body {
 #tiles .all-tiles-container .tile-container {
     cursor: pointer;
     position: relative;
-    width: 310px;
+    width: 328px;
     height: 240px;
     display: flex;
     justify-content: flex-end;
@@ -327,7 +327,7 @@ body {
 #tiles .all-tiles-container .long-tile-container {
     cursor: pointer;
     position: relative;
-    width: 620px;
+    width: 656px;
     height: 240px;
     display: flex;
     justify-content: flex-end;
@@ -408,3 +408,70 @@ body {
     margin: 5px 10px;
     font-weight: bold;
 }
+
+@media (max-width: 1000px) {
+    .store-and-search {
+        flex-direction: column;
+        height: 190px;
+        justify-content: space-around;
+    }
+
+    .store-and-search * {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .store-and-search .search {
+        height: 28%;
+    }
+
+    .store-and-search .store-info .store-info-text .specifics {
+        flex-direction: column;
+        height: 46px;
+        justify-content: space-between;
+    }
+
+    #nav .nav-items {
+        width: 95%;
+    }
+
+    #nav .nav-items ul {
+        width: 90%;
+    }
+
+    #nav .cart-container {
+        width: 5%;
+    }
+
+    #hero .banner-text {
+        padding-right: 15px;
+    }
+}
+
+@media (max-width:730px) {
+    .nav-items ul li {
+        font-size: 8px;
+    }
+
+    #hero .centered-container {
+        width: 100%;
+    }
+
+    #hero .banner-text {
+        display: none;
+    }
+
+    #hero .hero-gear-pic {
+        width: 100%;
+    }
+
+    .cart-container {
+        font-size: 8px;
+    }
+
+    #tiles .all-tiles-container .long-tile-container {
+        width: 328px;
+        overflow: hidden;
+    }
+}   
