@@ -427,7 +427,12 @@ body {
         width: 65%;
     }
 
+    .store-and-search .store-info-text {
+        width: 100%;
+    }
+
     .store-and-search .store-info .store-info-text .specifics {
+        margin-top: 6px;
         flex-direction: column;
         height: 46px;
         justify-content: space-between;
