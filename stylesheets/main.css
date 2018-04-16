@@ -470,6 +470,8 @@ body {
 
     #hero .hero-gear-pic {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .cart-container {
